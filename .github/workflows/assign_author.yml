@@ -1,11 +1,17 @@
+name: Auto Author Assign
+
 on:
-  pull_request:
-    types: [opened]
-name: Pull Request
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  pull-requests: write
+
 jobs:
-  assignAuthor:
-    name: Assign author to PR
+  assign-author:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign author to PR
-        uses: technote-space/assign-author@v1
+      - name: Assign Author to Pull Requests
+        uses: toshimaru/auto-author-assign@v2.1.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
