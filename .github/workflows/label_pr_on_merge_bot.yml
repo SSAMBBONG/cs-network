@@ -2,7 +2,7 @@ name: Label PR on Merge Bot Action
 
 on:
   pull_request:
-    types: [ closed ]
+    types: [closed]
 
 jobs:
   label_pr_job:
@@ -13,4 +13,4 @@ jobs:
         uses: abhijithvijayan/label-pr-on-merge-bot@v2
         with:
           GITHUB_TOKEN: ${{ secrets.SSAMBBONG_TOKEN }}
-		  merged_label: '🚀 merged'
+          merged_label: '🚀 merged'
