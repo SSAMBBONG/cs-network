@@ -2,7 +2,7 @@ name: Pull Request Stats
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   stats:
@@ -11,7 +11,7 @@ jobs:
       - name: Run pull request stats
         uses: flowwer-dev/pull-request-stats@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SSAMBBONG_TOKEN }}
           organization: 'SSAMBBONG'
           period: 30
           charts: true
