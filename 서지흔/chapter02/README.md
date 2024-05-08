@@ -131,7 +131,7 @@
 - 클래딩 : 빛이 코어 안쪽에서만 흐르도록 빛을 가두는 역할(굴절률 차이)
     <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/c31d0afa-74a8-48b2-9d31-44a1b30dc036/Untitled.png) -->
 - 싱글모드 광섬유 케이블(SMF : Single Mode Fiber)
-  - 코어 지름 : 8~10mm (멀티모드 광섬유 케이블 보다 작음) → 빛이 이동할 수 있는 경로 많음 → 빛 이동경로 하나 이상 갖기 힘들고 mode가 single이라 표현
+  - 코어 지름 : 8~10mm (멀티모드 광섬유 케이블 보다 작음) → 빛이 이동할 수 있는 경로 적음 → 빛 이동경로 하나 이상 갖기 힘들고 mode가 single이라 표현
       <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/3b27c2de-0b1f-4f06-9d80-021463ff04f2/Untitled.png) -->
   - 신호손실 적어 장거리 전송 적합, 멀티모드보다 비용 높음
   - 장파장 사용
