@@ -24,7 +24,7 @@
 - 통신매체(유선매체/무선매체) : 노드를 연결하는 간선
 - 메시지 : 통신매체로 연결된 노드가 주고받는 정보(파일, 메일, 웹페이지..)
 
-![네트워크구조](/서지흔/img/ch1-네트워크구조.png)
+![네트워크구조](/img/ch1-네트워크구조.png)
 
 ### 범위에 따른 네트워크 분류
 
@@ -37,7 +37,7 @@ WAN > MAN > CAN > LAN
   - 인터넷 : 네트워크의 네트워크 → 같은 LAN에 속한 호스트끼리 메시지 주고받을 땐 WAN필요x, 다른 LAN에 속한 호스트와 메시지 주고받을 때 WAN필요
   - 우리가 인터넷을 사용하기 위해 접속하는 WAN은 ISP(Internet Service Provider)라는 인터넷 서비스업체가 구축, 관리 → WAN에 연결가능한 회선 임대 등 WAN과 관련된 다양한 서비스 제공(KT, LG, SK)
 
-![WAN](/서지흔/img/ch1-WAN.png)
+![WAN](/img/ch1-WAN.png)
 
 ### 메시지 교환 방식에 따른 네트워크 분류
 
@@ -68,18 +68,14 @@ WAN > MAN > CAN > LAN
 
 - 프로토콜 : 노드 간에 정보를 올바르게 주고받기 위해 합의된 규칙이나 방법(비유 : 언어)
   - 서로 다른 통신장치들이 정보 주고받기 위해서 프로토콜이 통해야함
-    <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/61873524-f74c-454c-ab29-6765a03b1f8a/Untitled.png) -->
 
 ### 네트워크 참조모델(네트워크 계층 모델)
 
 - 네트워크 구성과 설계 용이
 - 네트워크 문제 진단과 해결 용이 : 계층별로 진단
 
-<!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/9620dcb8-af3d-44e7-8346-9cd9b8f9da23/Untitled.png) -->
-
 - OSI 모델
   - 통신단계 7계층(OSI 7계층)
-    <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/757eb2be-c4fb-4ec9-a638-7f88f6c9e28a/Untitled.png) -->
   - 물리계층
     - 최하단 계층 : 1과0 비트 신호 주고받음
     - 근원적 통신
@@ -116,39 +112,32 @@ WAN > MAN > CAN > LAN
   - OSI모델의 목적 : 이상적 설계
   - TCP/IP : 실용적 구현
   - TCP/IP 4계층 / 인터넷 프로토콜 스위트 / TCP/IP 프로토콜 스택
-    <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/b2296e7d-42b5-49e6-aeb1-dc002f26cf7d/Untitled.png) -->
   - 네트워크 액세스 계층=(링크계층, 네트워크 인터페이스계층)
     - OSI 데이터 링크 계층과 유사
   - 인터넷계층
     - OSI 네트워크 계층과 유사
   - 전송계층
     - OSI 모델에서의 전송계층과 유사
-  - 응용계층
-    - OSI모델의 세션, 표현, 응용 계층 합친 것과 유사
-      <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/4c4a4e74-0075-4aa9-92d3-b442ea2c5d8e/Untitled.png) -->
+  - 응용계층 - OSI모델의 세션, 표현, 응용 계층 합친 것과 유사
+    ![네트워크참조모델](/img/ch1-네트워크참조모델.png)
 
 ### 캡슐화와 역캡슐화
 
 - 캡슐화(인캡슐레이션) : 송신과정
   - 패킷단위 송수신
-    <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/62d08c6b-be43-4df4-838b-c991d3d619e3/Untitled.png) -->
   - 정보 송신 시 상위계층으로부터 내려받은 패킷을 페이로드 삼아, 프로토콜에 걸맞은 헤더(혹은 트레일러) 덧 붙인 후 계층 전달
   - 한 단계 아래 계층은 위의 계층으로부터 받은 패킷에 헤더 및 트레일러 추가
 - 역캡슐화(디캡슐레이션) : 수신과정
   - 송신의 반대 (수신)
-    <!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/f5368193-fc0b-411d-93f7-adfa12a1705d/Untitled.png) -->
 
 ### PDU
 
 - 각계층에서 송수신되는 메시지 단위
 - 상위 계층에서 전달받은 데이터에 현재계층의 프로토콜 헤더를 추가하면 현재계층의 PDU
-  <!-- ![패킷 (IP패킷) 혼동방지](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/6cf92953-45a3-47df-ab70-b69c979486ea/Untitled.png) -->
   패킷 (IP패킷) 혼동방지
 - 주로 전송계층 이하의 메시지 구분위해 사용 → 전송계층보다 높은 계층에서는 일반적으로 데이터 혹은 메시지로 지칭
 
-<!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/d024d87b-d92f-4c61-8494-7dc92a2aefde/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2cdfad60-29be-4ce4-9f38-b6c54a42fbb1/9c99b86d-e296-49f2-a784-8140076d4f86/Untitled.png) -->
+![PDU](/img/ch1-pdu.png)
 
 ### 트래픽과 네트워크 성능지표
 
