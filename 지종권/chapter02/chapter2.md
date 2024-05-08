@@ -12,7 +12,7 @@ LAN에서 대중적으로 사용되는 기술이다
 
 캡슐화 과정에서 헤더와 트레일러를 추가 !
 
-<img width="606" alt="스크린샷 2024-05-06 오후 9 15 48" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/e30554f2-934c-4ac3-a117-4402a6c3eaba">
+![alt text](../img/chap2_이더넷구조.PNG)
 
 프리앰블 : 프레임의 시작을 알리는 8바이트 크기의 정보
 
@@ -67,11 +67,11 @@ MAC 주소를 학습해 MAC 주소를 가진 호스트에만 프레임을 전달
 
 1. 플러딩 : 송신지 포트를 제외한 모든 포트로 프레임 전송
 
-   <img width="576" alt="스크린샷 2024-05-06 오후 9 16 35" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/a4f91c26-5dbe-4258-b642-b586889fb4ff">
+   ![alt text](../img/chap2_플러딩.PNG)
     
 3. 포워딩과 필터링 : 전달받은 프레임을 어디로 내보내질 경정하고, 내보는내는 것
 
-    <img width="578" alt="스크린샷 2024-05-06 오후 9 16 50" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/e4f4e8d8-4a95-49e2-8f1c-05cc1003244e">
+    ![alt text](../img/chap2_포워딩.PNG)
     
 4. 에이징 : 일정시간동안 프레임을 전송받지 못한다면 삭제
 
@@ -83,11 +83,11 @@ MAC 주소를 학습해 MAC 주소를 가진 호스트에만 프레임을 전달
 
 결국 모든 포트에 신호를 보내기 때문에 불필요한 트래픽이 발생
 
-<img width="555" alt="스크린샷 2024-05-06 오후 9 17 24" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/99bb0864-811a-4531-a1fb-9c6a7c63fe6b">
+![alt text](../img/chap2_VLAN전.png)
 
 VLAN을 구성하여 논리적 단위로 LAN을 구획할 수 있다.
 
-![스크린샷 2024-05-<img width="585" alt="스크린샷 2024-05-06 오후 9 17 37" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/a11144af-3116-46ad-9556-08e244da64fa">
+![alt text](../img/chap2_VLAN.PNG)
 
 개발부는 개발부 공지사항만, 총무부는 총무부 공지사항만 받을 수 있다
 
@@ -97,6 +97,6 @@ VLAN을 구성하여 논리적 단위로 LAN을 구획할 수 있다.
 
 VLAN Trunking은 두 대 이상의 VLAN 스위치를 효율적으로 연결하여 확장하는 방법
 
-<img width="607" alt="스크린샷 2024-05-06 오후 9 17 52" src="https://github.com/SSAMBBONG/cs-network/assets/80726887/b14c8de9-093e-49dd-af0e-ceac05cee8fb">
+![alt text](../img/chap2_VLAN트렁킹.PNG)
 
 트렁크 포트를 통해 확장하여 같은 LAN 속하게 네트워크를 구성할 수 있다.
