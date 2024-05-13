@@ -19,7 +19,7 @@
 
 택배에 비유하면 MAC주소는 **수신인 정보**라고 볼 수 있다. 택배를 보내기 위해서 **수신지 정보**도 필요하며 이 역할을 하는 것이 `IP 주소`다.
 
-IP 주소를 `논리 주소`라고도 부른다. 또한 MAC주소는 NIC마다 할당되는 고정 주소지만, IP 주소는 `DHCP (Dynamic Host Configuration Protocol)`을 통해 직접 할당 할 수 있으며 한 소스트가 여러 개의 IP 주소를 가질 수도 있다.
+IP 주소를 `논리 주소`라고도 부른다. 또한 MAC주소는 NIC마다 할당되는 고정 주소지만, IP 주소는 `DHCP (Dynamic Host Configuration Protocol)`을 통해 직접 할당 할 수 있으며 한 호스트가 여러 개의 IP 주소를 가질 수도 있다.
 
 ### 인터넷 프로토콜
 
