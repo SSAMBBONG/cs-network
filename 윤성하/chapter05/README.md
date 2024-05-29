@@ -269,6 +269,7 @@ DELETE
 | 403   | Forbidden          | 요청이 서버에 의해 거부됨 (예: 접근 권한이 없을 경우) |
 | 404   | Not Found          | 요청받은 자원을 찾을 수 없음                 |
 | 405   | Method Not Allowed | 요청한 메서드를 지원하지 않음                 |
+
 401 코드 사용 시 WWW-Authenticate 헤더를 통해 인증 방법을 알려 주어야 한다.
 
 500번대 상태 코드
