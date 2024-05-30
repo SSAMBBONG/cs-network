@@ -212,7 +212,7 @@ HTTP/1.1 404 NOT FOUND
 #### 요청과 응답 모두에서 활용되는 HTTP 헤더
 
 - Date: 메시지가 생성된 날짜, 시간 정보를 담은 헤더다.
-- Connection: 클라이언트의 요청과 응답 간 연결 방식을 설정하는 헤다다.
+- Connection: 클라이언트의 요청과 응답 간 연결 방식을 설정하는 헤더다.
   ```
   Connection: keep-alive
   ```
