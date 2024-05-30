@@ -261,7 +261,7 @@ HTTP/1.1 404 NOT FOUND
 
 ![alt text](../img/ch5-쿠키헤더.png)
 
-또한 쿠기는 사용 가능한 도메인이 정해져 있다. 이는 응답 메시지 속 `Set-Cookie 헤더` 의 `domain 속성` 으로 정해진다.
+또한 쿠키는 사용 가능한 도메인이 정해져 있다. 이는 응답 메시지 속 `Set-Cookie 헤더` 의 `domain 속성` 으로 정해진다.
 
 ```
 Set-Cookie: name=gildong domain=example.com
