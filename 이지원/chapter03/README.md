@@ -216,7 +216,7 @@
 - 라우터끼리 자신들의 정보를 교환하며 패킷이 이동할 최적의 경로를 찾기 위한 프로토콜
 - `AS(Autonomous System)`
   - 동일한 라우팅 정책으로 운용되는 라우터들의 집단 네트워크
-- `IGF(Interior Gateway Protocol)`
+- `IGP(Interior Gateway Protocol)`
   - AS 내부에서 수행
   - `RIP(Routing Information Protocol)`
     - `거리 벡터` 기반의 라우팅 프로토콜
