@@ -95,7 +95,7 @@
 
 ### HTTPS : SSL과 TLS
 
-- SSL (Secure Sockeys Layer)
+- SSL (Secure Sockets Layer)
 - TLS (Transport Layer Security)
   - SSL을 계승한 프로토콜
 - SSL과 TLS는 인증과 암호화를 수행하는 프로토콜
